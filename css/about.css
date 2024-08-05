@@ -1,0 +1,361 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.video-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container video {
+  width: 80%;
+  height: 600px;
+  object-fit: cover;
+  z-index: -1!important;
+}
+
+.we-are {
+  margin-top: 6%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.we-are p{
+  text-align: justify;
+}
+.btnn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn1 {
+  padding: 5px 30px;
+  position: relative;
+  border-radius: 5px;
+  border: 2px solid black;
+  background: transparent;
+  color: black;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+
+.btn1:hover {
+  background-color: #54d9e1;
+  color: white;
+  padding: 7px 25px;
+  border: 2px solid white;
+}
+
+/* brand-apparels */
+
+.brand-apparels {
+  width: 100%;
+  height: auto;
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 70px;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+}
+
+.brand-apparels .left-side {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.brand-apparels .left-side img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-apparels .right-side {
+  width: 40%;
+  height: auto;
+  text-align: justify;
+}
+
+.brand-apparels .right-side .content-side {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.btnn1 {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.btn2 {
+  padding: 5px 30px;
+  position: relative;
+  border-radius: 5px;
+  border: 2px solid black;
+  background: transparent;
+  color: black;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+
+.btn2:hover {
+  background-color: #54d9e1;
+  color: white;
+  padding: 7px 25px;
+  border: 2px solid white;
+}
+
+/* brand-apparels end */
+
+
+/* About */
+
+.we-design {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 2%;
+  flex-direction: row;
+
+}
+
+.img-container {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  background-image: url('https://img.freepik.com/free-photo/man-suit_1321-1159.jpg?t=st=1721993433~exp=1721997033~hmac=ced320ff6ddb256aba2a2fe6d8f9815245d499897652cac7fce6a4361a68d7e5&w=826');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+}
+
+.img-container img {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 55%;
+  right: 53%;
+  background-position: top;
+  
+  object-fit: cover;
+  border-radius: 10px;
+  animation: anime 5s ease-in-out infinite;
+}
+
+@keyframes anime {
+  0% {
+    top: 40%;
+  }
+
+  50% {
+    top: 60%;
+  }
+
+  100% {
+    top: 50%;
+  }
+}
+
+
+.about-container {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-left: 50px;
+}
+
+.about-container .content-about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* About end */
+
+
+/* communnity */
+
+.community {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6%;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.community .img-side {
+  width: 50%;
+  height: auto;
+
+}
+
+.community .img-side img {
+  width: 100%;
+}
+
+.community .content-side {
+  width: 50%;
+  height: auto;
+
+}
+
+/* form{
+  width: 100%;
+  height: auto;
+}
+.reponsive-input{
+  width: 300px!important;
+} */
+/* input {
+  width:200px!important;
+  height: 40px;
+  border: none;
+  background-color: #e5e5e6;
+  border-radius: 5px 0px 0px 5px;
+}
+
+::placeholder {
+  color: rgb(39, 39, 39);
+  font-size: 13px;
+  letter-spacing: 1px;
+} */
+
+/* .btn {
+  padding: 10px 40px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 0px 5px 5px 0px;
+} */
+
+
+
+/* communnity end */
+
+
+@media screen and (max-width:768px) and (min-width:50px) {
+
+  .brand-apparels,
+  .we-design,
+  .community {
+    flex-direction: column;
+  }
+
+  .we-design .img-container,
+  .we-design .about-container,
+  .brand-apparels .left-side,
+  .brand-apparels .right-side,
+  .community .img-side,
+  .community .content-side {
+    width: 100%;
+    height: 100%;
+  }
+
+  .community .content-side ,
+  .about-container .content-about .btnn1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .brand-apparels .right-side .content-side,
+  .content-side .btnn1,
+  .we-design .about-container .content-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .we-design {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .we-design .img-container img {
+    background-position: top;
+  }
+
+  .we-design .about-container {
+    order: 2;
+  }
+
+  .about-container , .about-container .content-about .btnn1{
+    width: 100%;
+    padding: 0px;
+  }
+   .we-design .img-container {
+    order: 1;
+  }
+  .we-are p{
+    text-align: justify;
+  }
+  
+}
+@media screen and (max-width:425px)  {
+  input {
+    width: 150px;
+  }
+  .btn {
+    padding: 5px 20px;
+  }
+}
+@media screen and (max-width:250px)  {
+  input {
+    width: 100px;
+  }
+  .btn {
+    padding: 2px 8px;
+    font-size: 13px;
+  }
+  input::placeholder{
+    font-size: 10px;
+  }
+}

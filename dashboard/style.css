@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.slidebar-container{
+    display: flex;
+    flex-direction: row;
+}
+.slidebar{
+    display: none; 
+    transition: left 0.5s ease-in-out;
+}
+.slidebar h2{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.slidebar ul{
+    list-style-type: none;
+    padding: 0;
+}
+.slidebar li{
+    padding: 10px;
+    padding-left: 20px;
+    /* text-align: start; */
+}
+
+.slidebar a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+/* ln no : 98 */
+.content{
+    margin-top:45px;
+    padding-left:20px;
+    padding-right:20px;
+    /* background-color: yellow !important; */
+}
+.slidebar-container .slidebar-open .slider{
+    width: 0;
+    overflow: hidden;
+}
+.slidebar-open{
+    padding-top: 50px;
+    display: block;
+    width: 450px!important;
+    height: 100vh!important;
+    background-color:#0077B6;
+    /* background-color:#blue; */
+    color: white;
+    transition:left all 0.5s;
+    overflow: hidden;
+}
+
+#toggleButton{
+    padding: 4px 10px; 
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    background-color: #54d9e1;
+}
+.tab-content{
+    /* overflow-y: scroll; */
+}
+
+/* nav  */
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color:#0077B6;
+    text-decoration: none;
+    row-gap: 20px!important;
+}
+.slidebar ul li a.active {
+    color: #54d9e1; 
+    transition: all 0.5s;
+}
+
+nav  ul .button{
+    width: 20%;
+    height: auto;
+}
+nav ul .search{
+    width: 30%;
+}
+
+nav ul .time{
+    width: 100%;
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    padding-left: 15px!important;
+}
+
+
+
+
+
+
+
+/* nav end */
+
+/* main content */
+/* 
+#home{
+    width: 100%;
+    height: 100vh;
+}
+#about{
+    width: 100%;
+    height: 100vh;
+}
+#service{
+    width: 100%;
+    height: 100vh;
+}
+#contact{
+    width: 100%;
+    height: 100vh;
+} */
+
+/* main content end */

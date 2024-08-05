@@ -1,0 +1,502 @@
+@font-face {
+    font-family: roboto;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: roboto;
+}
+
+
+
+
+.dark-mode {
+    background-color: black;
+    /* background-color: rgba(0, 0, 0, 0.507); */
+    color: white;
+}
+
+.nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f5f5f5;
+    position: sticky;
+    top: 10px;
+}
+
+.nav .logo {
+    width: 30%;
+}
+
+.nav ul {
+    width: 40% !important;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    line-height: 80px;
+    /* color: rgb(214, 214, 214); */
+    color: black;
+    font-weight: medium;
+}
+
+.nav .icons {
+    line-height: 80px;
+    width: 30%;
+    gap: 0px;
+}
+
+.nav .icons i {
+    gap: 30px;
+    margin-left: 50px;
+}
+
+.nav .logo a {
+    text-decoration: none;
+    color: black;
+    font-size: 32px;
+    margin-left: 225px;
+    line-height: 80px;
+}
+
+#ham-icon {
+    font-size: 28px;
+    display: none;
+}
+
+.nav input {
+    display: none;
+}
+
+
+/* input[type="submit"] {
+    border: none;
+    border-radius: 10px;
+    color: white;
+    /* line-height: 100px; 
+    margin-right: 20px;margin-top: 20%;
+} */
+
+
+
+
+/* caurosel */
+
+
+.caption {
+    top: 35%;
+}
+
+.img {
+    float: right;
+    margin-right: 50px !important;
+}
+
+.text {
+    font-size: 75px;
+    text-align: left;
+}
+
+/* .heading {}/ */
+
+
+.btn1 {
+    width: clamp(100px, 10vw, 150px);
+    height: 20px;
+    position: relative;
+    border-radius: 5px;
+    border: none;
+    background: transparent;
+    color: black;
+    font-size: 15px;
+    font-weight: regular;
+    cursor: pointer;
+    margin-right: 580px;
+    font-family: roboto;
+}
+
+.btn1::before {
+    content: "";
+    position: absolute;
+    background: #54d9e1;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: .5s ease-out;
+}
+
+.btn1:hover::before {
+    transform: scaleX(0.8);
+}
+
+/* caurosel end */
+
+
+
+/* card-container */
+
+
+
+
+
+
+
+/* .card-container{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+.card-wrapper {
+    width: 400px;
+    height: 400px;
+    background-image: url('./img/specialcollection-1.jpg');
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.card-wrapper .card-top p {
+    color: white;
+    font-size: 30px;
+    font-family: roboto;
+}
+
+.button {
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.button:hover {
+    color: white;
+    background-color: #54d9e1;
+} */
+
+
+
+/* card-containerend */
+
+
+
+
+
+/* categories */
+
+
+.categories {
+    margin-top: 6%;
+
+}
+
+/* categoriesend */
+/* footer */
+
+.foot {
+    width: 100%;
+}
+
+.footer {
+    width: 90%;
+    height: auto;
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px;
+    justify-content: center;
+    align-items: start;
+    /* margin-left: 7.5%; */
+    margin-left: clamp(1%, 4vw,  7.5%);
+}
+
+.footer .left {
+    width: 50%;
+    display: flex;
+}
+
+.footer .right {
+    width: 50%;
+    display: flex;
+}
+
+.company {
+    width: 50%;
+}
+
+.shop {
+    width: 50%;
+}
+
+.customer {
+    width: 50%;
+}
+
+.staytouch {
+    width: 50%;
+}
+
+.company a .cloth {
+    text-decoration: none;
+    font-size: 35px;
+    color: rgb(27, 25, 25) !important;
+    font-weight: bold;
+}
+
+.company a .tel {
+    font-size: 15px !important;
+}
+
+.company p {
+    font-size: 15px;
+}
+
+.company .social {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.fa-brands {
+    color: black !important;
+}
+
+.social .fb a i,
+.social .insta a i,
+.social .twitt a i,
+.social .tik-tok a i {
+    font-size: 20px !important;
+    gap: 10px;
+    color: white;
+}
+
+.social .fb,
+.social .insta,
+.social .twitt,
+.social .tik-tok {
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: 1px solid black;
+}
+
+.social .fb a:hover {
+    color: white !important;
+}
+
+.social .fb:hover,
+.social .insta:hover,
+.social .twitt:hover,
+.social .tik-tok:hover {
+    color: white;
+    border-color: white;
+    background-color: #54d9e1;
+}
+
+
+.shop p {
+    font-size: 15px;
+}
+
+.customer p {
+    font-size: 15px;
+
+}
+
+.staytouch p {
+    font-size: 15px;
+}
+
+.staytouch input {
+    height: 40px;
+    border: none;
+    background-color: #e5e5e6;
+    /* border-radius: 150px; */
+    width: 80px;
+}
+
+::placeholder {
+    color: rgb(39, 39, 39);
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+/* footer end */
+
+
+
+
+
+/* responsive */
+
+
+@media(max-width:1024px) {
+    .nav .logo a {
+        margin-left: 100px;
+    }
+
+    .card-container {
+        /* flex-direction: column; */
+        margin-top: 55px;
+        row-gap: 30px;
+    }
+
+
+
+}
+
+@media(max-width:768px) {
+    .nav #ham-icon {
+        display: block;
+        order: 3;
+        color: #060d0e;
+        line-height: 20px !important;
+        margin-top:clamp(5px, 4vw, 20px);
+    }
+
+    .nav ul {
+        position: absolute;
+        background-color: #0a0c0c !important;
+        height: auto;
+        width: 100% !important;
+        top: 80px;
+        left: -100%;
+        flex-direction: column;
+        /* gap: 1px; */
+        transition-duration: 0.8s;
+        z-index: 2;
+    }
+
+    .nav ul li {
+        align-items: center;
+        color: rgb(216, 216, 216);
+        color: white;
+        text-align: center !important;
+        z-index: 2;
+
+    }
+
+    .nav ul li a {
+        width: 100%;
+        color: white;
+        font-size: 18px !important;
+    }
+
+    #ham-icon {
+        line-height: 90px;
+    }
+
+    #check-btn:checked~ul {
+        /* top: 80px!important; */
+        padding: 0px;
+        left: 0px;
+        /* width: 100%; */
+    }
+
+    .nav .logo a {
+        margin: 0px;
+    }
+
+    .nav .icons i {
+        margin-left: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .footer .left {
+        width: 100%;
+    }
+
+    .footer .right {
+        width: 100%;
+    }
+
+    .caption {
+        margin-bottom: opx;
+    }
+
+}
+
+@media(max-width:425px) {
+    .nav .icons i {
+        margin-left: 10px;
+    }
+
+    .btn1 {
+        width: 100px;
+        height: 40px;
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    .nav .logo a {
+        font-size: 25px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .footer .left {
+        width: 100%;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .footer .right {
+        width: 100%;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .footer .left .company,
+    .footer .left .shop,
+    .footer .right .customer,
+    .footer .right .staytouch {
+        width: 100%;
+    }
+
+    .img {
+        width: 50% !important;
+        margin-right: 0px !important;
+        ;
+    }
+
+    .btn {
+        width: 100px !important;
+    }
+}
+
+@media(max-width:375px) {
+    .nav .icons i {
+        margin-left: 5px;
+    }
+
+    .nav .logo a {
+        font-size: 20px;
+    }
+
+    .staytouch input {
+        height: 40px;
+        width: 160px;
+        border: none;
+        background-color: #e5e5e6;
+    }
+}
